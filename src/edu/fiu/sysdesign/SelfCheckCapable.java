@@ -16,7 +16,7 @@ package edu.fiu.sysdesign;
  * The SelfCheckCapable Interface - creates some basic
  * necessitites for testing 
  * @author asengupt (Arijit Sengupta - FIU)
- *
+ * created by Bek
  */
 public interface SelfCheckCapable {
 	
