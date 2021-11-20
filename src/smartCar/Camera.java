@@ -17,5 +17,10 @@ public class Camera extends CentralComputer {
 	public static void takePicture() {
 		System.out.println("Camera has captured an image");
 	}
-	
+	public static void cameraOn() {
+		System.out.println("Camera is turned on");
+	}
+	public static void detectObstacles() {
+		System.out.println("Detecting obstacles");
+	}
 }

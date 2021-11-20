@@ -14,8 +14,8 @@ public class GPS extends CentralComputer {
 	public static void navigate() {
 		System.out.println("GPS is navigating");
 	}
-	public static void search() {
-		System.out.println("GPS is searching for the location");
+	public static void inputDestination() {
+		System.out.println("Destination inputted");
 	}
 	
 }

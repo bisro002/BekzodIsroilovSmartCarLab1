@@ -1,6 +1,6 @@
 package smartCar;
 
-public class Car {
+public class Car implements selfCheckCapable{
 	private String driver;
 	private int yearMake;
 	private Tire tire;
@@ -42,9 +42,29 @@ public class Car {
 	public static void turnLeft() {
 		System.out.println("turn left");
 	}
-	public static void stop() {
-		System.out.println("stop");
+	public static void parkCar() {
+		System.out.println("Car parked");
 	}
+	
+	
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		String componentName = null;
+		return componentName;
+	}
+
+	
+	public boolean selfCheck() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	
+	public boolean runSelfCheck() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+	
 	public static void checkDiagnostics() {
 		System.out.println("Diagnostics are optimal");
 	}
@@ -52,9 +72,12 @@ public class Car {
 		// TODO Auto-generated method stub
 		Car mycar = new Car();
 		mycar.checkDiagnostics();
+		mycar.runSelfCheck();
 		
 		
 		
 	}
+
+	
 
 }
