@@ -3,11 +3,13 @@
  */
 package smartCar;
 
+import edu.fiu.sysdesign.SelfCheckCapable;
+
 /**
  * @author bekis
  *
  */
-public class CentralComputer extends Car {
+public class CentralComputer extends Car implements SelfCheckCapable {
 	private double memory;
 	private String model;
 	private int OSVersion;
@@ -26,6 +28,17 @@ public class CentralComputer extends Car {
 	}
 	public static void checkAutoPilot() {
 		System.out.println("Autonomous driving is activated");
+	}
+	
+	public boolean selfCheck() {
+		return true;
+	}
+	public String getComponentName() {
+		String name = null;
+		return name;
+	}
+	public boolean runSelfCheck() {
+		return true;
 	}
 	
 }

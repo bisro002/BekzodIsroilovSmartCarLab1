@@ -3,11 +3,13 @@
  */
 package smartCar;
 
+import edu.fiu.sysdesign.SelfCheckCapable;
+
 /**
  * @author bekis
  *
  */
-public class Battery extends Car {
+public class Battery extends Car implements SelfCheckCapable {
 	private double batteryLife;
 	private double capacity;
 	
@@ -19,5 +21,16 @@ public class Battery extends Car {
 	}
 	public static void charge() {
 		System.out.println("battery is charging");
+	}
+	
+	public boolean selfCheck() {
+		return true;
+	}
+	public String getComponentName() {
+		String name = null;
+		return name;
+	}
+	public boolean runSelfCheck() {
+		return true;
 	}
 }

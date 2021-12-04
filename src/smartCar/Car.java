@@ -1,5 +1,7 @@
 package smartCar;
 
+import edu.fiu.sysdesign.SelfCheckUtils;
+
 public class Car implements selfCheckCapable{
 	private String driver;
 	private int yearMake;
@@ -56,7 +58,7 @@ public class Car implements selfCheckCapable{
 	
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
-		return true;
+		return SelfCheckUtils.randomCheck(0.2);
 	}
 
 	
